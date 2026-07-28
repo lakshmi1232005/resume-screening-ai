@@ -20,6 +20,11 @@ PyMuPDF==1.24.10          # imported as `fitz`
 
 # --- NLP: cleaning, lemmatization, entity extraction ---
 spacy==3.7.5
+# spaCy's English model, pinned as a direct wheel URL so it installs
+# automatically via `pip install -r requirements.txt` -- cloud hosts
+# like Streamlit Community Cloud only run this file, not a separate
+# `python -m spacy download` command.
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 
 # --- Semantic similarity (embeddings) ---
 sentence-transformers==3.0.1
