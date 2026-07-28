@@ -1,0 +1,42 @@
+# ============================================================
+# requirements.txt
+# AI-Powered Resume Screening & Improvement System
+# ------------------------------------------------------------
+# Install with:
+#   pip install -r requirements.txt --break-system-packages
+# (drop --break-system-packages if you're inside a venv)
+# ============================================================
+
+# --- Web UI ---
+streamlit==1.38.0
+
+# --- Data handling ---
+pandas==2.2.2
+numpy==1.26.4
+
+# --- PDF parsing (two engines used for robustness / fallback) ---
+pdfplumber==0.11.4
+PyMuPDF==1.24.10          # imported as `fitz`
+
+# --- NLP: cleaning, lemmatization, entity extraction ---
+spacy==3.7.5
+
+# --- Semantic similarity (embeddings) ---
+sentence-transformers==3.0.1
+
+# --- Classic ML utilities (cosine similarity, TF-IDF fallback, scaling) ---
+scikit-learn==1.5.1
+
+# --- Visualization / dashboard charts ---
+plotly==5.23.0
+
+# --- DOCX generation (rewritten resume export) ---
+python-docx==1.1.2
+
+# --- PDF report generation ---
+reportlab==4.2.2
+
+# ============================================================
+# After installing, download the spaCy English model with:
+#   python -m spacy download en_core_web_sm
+# ============================================================

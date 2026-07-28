@@ -1,0 +1,32 @@
+# --- Virtual environment ---
+venv/
+.venv/
+env/
+
+# --- Python bytecode / caches ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- ML model caches (large, re-downloadable) ---
+.cache/
+*.spacy
+
+# --- User data: uploaded resumes / JDs, generated outputs & reports ---
+# Keep the folder structure (.gitkeep) but not the actual uploaded/
+# generated files, which are per-user and can be large / sensitive.
+uploads/*
+!uploads/.gitkeep
+outputs/*
+!outputs/.gitkeep
+reports/*
+!reports/.gitkeep
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
