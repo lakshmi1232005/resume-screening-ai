@@ -30,3 +30,4 @@ Thumbs.db
 
 # --- Streamlit ---
 .streamlit/secrets.toml
+raw_dump.txt
